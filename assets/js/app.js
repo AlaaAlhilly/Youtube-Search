@@ -29,13 +29,13 @@ function onYouTubeApiLoad() {
 // Called when the search button is clicked in the html code
 $('.addVids').click(function() {
     $('.imgs').empty();
-    var query = encodeURIComponent($("#targetVideo").val()).replace(/%20/g, "+");
+    var query = encodeURIComponent($("#targetVideo").val()+"recipe").replace(/%20/g, "+");
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
         part: 'snippet',
         q:query,
         type: 'video',
-        maxResults: 3,
+        maxResults: 6,
         order: 'viewCount',
         publishedAfter: '2015-01-01T00:00:00Z'
     });
