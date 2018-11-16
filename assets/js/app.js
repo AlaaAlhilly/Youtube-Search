@@ -42,7 +42,7 @@ $(function(){
             $.each(videoResult.items,function(index,item){
                 $("#imgs").append(arrayOfEl(displayVideo(), [{"video":item.snippet.title, "videoId":item.id.videoId}]));
             });
-            restHeight();
+            resetHeight();
         });
     });
     $(window).on('resize',resetHeight);
