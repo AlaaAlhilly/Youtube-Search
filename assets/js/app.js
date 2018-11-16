@@ -28,6 +28,7 @@ function onYouTubeApiLoad() {
  
 // Called when the search button is clicked in the html code
 $('.addVids').click(function() {
+    $('.imgs').empty();
     var query = encodeURIComponent($("#targetVideo").val()).replace(/%20/g, "+");
     // Use the JavaScript client library to create a search.list() API call.
     var request = gapi.client.youtube.search.list({
