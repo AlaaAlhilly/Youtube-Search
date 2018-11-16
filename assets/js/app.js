@@ -43,7 +43,7 @@ $('.addVids').click(function() {
 function onSearchResponse(response) {
 
     var videoResult = response.items;
-    $('#targetVideo').html('');
+    $('#targetVideo').val('');
     $.each(videoResult,function(index,item){
         $(".imgs").append(arrayOfEl(displayVideo(), [{"video":item.snippet.title, "videoId":item.id.videoId}]));
     });
