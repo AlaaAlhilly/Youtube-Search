@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Giffy</title>
+    <title>Youtube Searcher</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                 <input id="targetVideo" type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
                     aria-describedby="button-addon1">
             </div>
-            <button type="button" class="btn btn-primary addgiffs">Add Giffs</button>
+            <button on click="search()" type="button" class="btn btn-primary addVids">Search Youtube</button>
         </div>
     </div>
     <div class="container imgs">
@@ -36,10 +36,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
-    </div>
-
-    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
 </body>
 
 </html>
