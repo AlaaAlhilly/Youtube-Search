@@ -14,10 +14,10 @@ function arrayOfEl(e,t){
       return res
     }
 function displayVideo(){
-    var display = $(`<div class="videoContainer">
+    var display = `<div class="videoContainer">
     <h2>{{video}<h2>
     <iframe class="rs view" width="640" height="360" src="//www.youtube.com/embed/{{videoId}}" frameborder="0" allowfullscreen>
-    </iframe></div>`);
+    </iframe></div>`;
     return display;
 
 }
